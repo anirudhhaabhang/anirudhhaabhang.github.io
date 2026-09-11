@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --navy: #120A8F;
+  --white: #FFFFFF;
+  --white-soft: rgba(255, 255, 255, 0.88);
+  --gap: clamp(24px, 5vw, 64px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'EB Garamond', serif;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(28px, 5vw, 72px) clamp(24px, 6vw, 96px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Top bar (back navigation) ---------- */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: clamp(24px, 4vw, 48px);
+}
+
+.back-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.back-link:hover {
+  opacity: 0.72;
+}
+
+.back-link img {
+  height: 68px;
+  width: auto;
+  display: block;
+}
+
+.back-link span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+/* ---------- Page header ---------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin: 0;
+  line-height: 1.05;
+}
+
+/* ---------- Home page ---------- */
+.home-hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 4vh auto 0;
+}
+
+.home-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  margin: 0 0 18px;
+  letter-spacing: 0.5px;
+}
+
+.home-hero p {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  margin: 0;
+  color: var(--white-soft);
+}
+
+.nav-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: clamp(40px, 8vw, 120px);
+  margin: auto 0 8vh;
+  padding-top: 8vh;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  cursor: pointer;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.nav-item:hover {
+  transform: translateY(-6px);
+  opacity: 0.85;
+}
+
+.nav-item img {
+  height: clamp(130px, 16vw, 190px);
+  width: auto;
+  display: block;
+}
+
+.nav-item span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+
+/* ---------- Body copy ---------- */
+.body-copy {
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  line-height: 1.5;
+  max-width: 68ch;
+  margin: clamp(28px, 5vw, 48px) 0 0;
+  color: var(--white-soft);
+}
+
+/* ---------- Contact buttons ---------- */
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 420px;
+  margin-top: clamp(36px, 6vw, 56px);
+}
+
+.contact-button {
+  background: var(--white);
+  color: var(--navy);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 22px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Previous works ---------- */
+.works-grid {
+  margin-top: clamp(24px, 5vw, 40px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(28px, 5vw, 48px);
+}
+
+.work-card {
+  display: block;
+  width: min(420px, 100%);
+  cursor: pointer;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+.work-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 6.2;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.work-caption {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 14px;
+}
+
+/* ---------- Project page ---------- */
+.project-image {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 4px;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ---------- Footer spacer ---------- */
+.spacer {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .page-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .topbar {
+    justify-content: flex-start;
+  }
+  .nav-grid {
+    gap: 36px;
+  }
+}
