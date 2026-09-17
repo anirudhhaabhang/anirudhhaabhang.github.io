@@ -102,6 +102,11 @@ a {
   margin: 0 0 18px;
 }
 
+.home-hero h1 .tracked {
+  display: inline-block;
+  margin-right: -0.1em;
+}
+
 .home-hero p {
   font-family: 'Hedvig Letters Serif', serif;
   font-size: clamp(0.75rem, 3vw, 2.25rem);
@@ -147,10 +152,6 @@ a {
   font-size: clamp(1.25rem, 3vw, 2.25rem);
   letter-spacing: -0.08em;
   white-space: nowrap;
-}
-
-.nav-item--contact span {
-  align-self: flex-start;
 }
 
 /* ---------- Body copy ---------- */
