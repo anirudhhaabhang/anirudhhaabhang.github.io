@@ -154,6 +154,11 @@ a {
   white-space: nowrap;
 }
 
+.nav-item--contact span {
+  position: relative;
+  left: 2px;
+}
+
 /* ---------- Body copy ---------- */
 .body-copy {
   font-family: 'Hedvig Letters Serif', serif;
