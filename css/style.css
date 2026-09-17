@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Hedvig Letters Serif';
-  src: url('../fonts/Hedvig_Letters_Serif/HedvigLettersSerif-Regular-VariableFont_opsz.ttf') format('truetype');
+  src: url('../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf') format('truetype');
   font-weight: 400 900;
   font-style: normal;
 }
@@ -65,7 +65,7 @@ a {
 
 .back-link span {
   font-family: 'Hedvig Letters Serif', serif;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
@@ -80,7 +80,7 @@ a {
 .page-title {
   font-family: 'Hedvig Letters Serif', serif;
   font-weight: 600;
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(1.9rem, 4.8vw, 3.4rem);
   margin: 0;
   line-height: 1.05;
 }
@@ -95,14 +95,14 @@ a {
 .home-hero h1 {
   font-family: 'Hedvig Letters Serif', serif;
   font-weight: 600;
-  font-size: clamp(2.6rem, 7vw, 5rem);
+  font-size: clamp(2.1rem, 5.6vw, 4rem);
   margin: 0 0 18px;
   letter-spacing: 0.5px;
 }
 
 .home-hero p {
   font-family: 'Hedvig Letters Serif', serif;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(0.85rem, 1.5vw, 1.05rem);
   margin: 0;
   color: var(--white-soft);
 }
@@ -140,7 +140,7 @@ a {
 .nav-item span {
   font-family: 'Hedvig Letters Serif', serif;
   font-style: italic;
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-size: clamp(0.9rem, 1.6vw, 1.1rem);
 }
 
 .nav-item--contact span {
@@ -150,7 +150,7 @@ a {
 /* ---------- Body copy ---------- */
 .body-copy {
   font-family: 'Hedvig Letters Serif', serif;
-  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  font-size: clamp(0.95rem, 1.8vw, 1.3rem);
   line-height: 1.5;
   max-width: 68ch;
   margin: clamp(28px, 5vw, 48px) 0 0;
@@ -171,7 +171,7 @@ a {
   color: var(--navy);
   font-family: 'Hedvig Letters Serif', serif;
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   text-align: center;
   padding: 22px 24px;
   border-radius: 6px;
@@ -215,7 +215,7 @@ a {
 .work-caption {
   font-family: 'Hedvig Letters Serif', serif;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 14px;
 }
 
